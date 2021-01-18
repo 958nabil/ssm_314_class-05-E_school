@@ -3,6 +3,7 @@
 *************** /* Responsive_CSS */ *****************
 
 @media (max-width: 1199px) {}
+
 @media (max-width: 991px) {
     .banner_content{
         padding-right: 0;

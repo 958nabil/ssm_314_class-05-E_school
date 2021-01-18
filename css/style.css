@@ -22,6 +22,10 @@ header{
     background: #f0fff0;
 }
 
+.navbar{
+	background: #f0fff0;
+}
+
 .navbar-brand img {
 	width: 180px;
 }
@@ -56,6 +60,10 @@ header{
 
 header > .container{
     padding: 80px 0;
+}
+
+.header_bottom{
+	margin-top: 80px;
 }
 
 .banner_content{

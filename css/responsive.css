@@ -215,9 +215,26 @@
     .client_content p {
         line-height: 26px;
     }
-
-
-
-
    
+}
+
+@media (max-width: 380px) {
+    .banner_content h1 {
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    
+    .css1:hover {
+        transform: translateY(8px);
+    }
+    .css2:hover {
+        transform: translateY(8px);
+    }
+    .css3:hover {
+        transform: translateY(8px);
+    }
+    .css4:hover {
+        transform: translateY(8px);
+    }
 }

@@ -99,14 +99,34 @@ header > .container{
     font-weight: 500;
     transition: .4s;
     cursor: pointer;
-    border: 1px solid var(--btn-bg);
+	border: 1px solid var(--btn-bg);
+	position: relative;
+	z-index: 1;
 
 }
 .btn_custom:hover {
-	background: var(--color-white);
 	color: #000;
-	transform: scale(1.1);
-	box-shadow: 2px 3px 15px 0 rgb(164, 155, 155);
+	box-shadow: 0 0 15px 0 rgb(199, 192, 192);
+}
+
+.btn_custom::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: var(--color-white);
+	z-index: -1;
+	border-radius: 30px;
+	transition: .3s;
+	cursor: pointer;
+
+}
+
+.btn_custom:hover::after{
+	width: 100%;
+	border: 1px solid var(--btn-bg);
 }
 
 .banner_img{}
@@ -124,7 +144,9 @@ header > .container{
 	border: 1px solid #f4f0f0;
     border-radius: 10px;
     transition: all .4s ease-in-out;
-    cursor: pointer;
+	cursor: pointer;
+	animation-duration: 1.5s;
+	animation: fadeInbottom;
 }
 
 .features_content:hover {
